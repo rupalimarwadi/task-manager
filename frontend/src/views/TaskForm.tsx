@@ -48,7 +48,7 @@ export default function TaskForm() {
       if (isEdit) {
         await axios.put(`${API_BASE_URL}/tasks/${id}`, payload);
       } else {
-        await axios.post('${API_BASE_URL}/tasks', payload);
+        await axios.post(`${API_BASE_URL}/tasks`, payload);
       }
       setSuccess("Success! Moving back to list...");
       setTimeout(() => navigate('/'), 1200);

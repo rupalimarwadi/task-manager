@@ -15,7 +15,7 @@ export default function App() {
           <Link to="/" className="navbar-brand d-flex align-items-center gap-2 fw-bold">
             <span className="fs-4">⚡</span> Task Manager
           </Link>
-          <span className="navbar-text text-muted d-none d-sm-inline">
+          <span className="navbar-text d-none d-sm-inline">
             React + TypeScript + Bootstrap
           </span>
         </div>
