@@ -29,7 +29,7 @@ export const validateTask = [
     .isIn(['LOW', 'MEDIUM', 'HIGH', 'CRITICAL'])
     .withMessage('Invalid priority value'),
   body('dueDate')
-    .optional()
+    .optional({ nullable: true })
     .isISO8601()
     .withMessage('dueDate must be a valid ISO8601 date'),
   handleValidationErrors
